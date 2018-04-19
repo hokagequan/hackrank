@@ -15,6 +15,13 @@ def minimaxsum(arr):
 
 	print("{} {}".format(min_value, max_value))
 
+def better(arr):
+	if len(arr) <= 1:
+		return
+
+	sum_value = sum(arr)
+	print("{} {}".format((sum_value - max(arr)), (sum_value - min(arr))))
+
 
 if __name__ == '__main__':
 	arr = list(map(int, input().rstrip().split()))
