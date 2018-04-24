@@ -9,7 +9,10 @@ def birthday_cake_candles(arr):
     		max_values_count += 1
     print(max_values_count)
 
+def better(arr):
+	print(arr.count(max(arr)))
+
 
 if __name__ == '__main__':
     arr = list(map(int, input().rstrip().split()))
-    birthday_cake_candles(arr)
+    better(arr)
